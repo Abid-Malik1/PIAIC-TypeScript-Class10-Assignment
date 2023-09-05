@@ -1,0 +1,12 @@
+{
+  "name": "piaic-typescript-class10-assignment",
+  "version": "1.0.0",
+  "description": "PIAIC-TypeScript-Class10-Assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
