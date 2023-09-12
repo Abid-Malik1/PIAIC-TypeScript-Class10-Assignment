@@ -1,4 +1,5 @@
-let username:string = "“Hello Eric, would you like to learn some Python today?”";
+let username: string =
+  "“Hello Eric, would you like to learn some Python today?”";
 
 console.log(username);
 
