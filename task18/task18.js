@@ -1,20 +1,38 @@
-var dinnerGuests5 = ["Albert Einstein", "Marie Curie", "Nelson Mandela"];
-var unableToAttend5 = "Ada Lovelace";
-var newGuest5 = "Marie Curie";
-var indexOfunableToAttend5 = dinnerGuests5.indexOf(unableToAttend5);
-if (indexOfunableToAttend5 !== -1) {
-    dinnerGuests5[indexOfunableToAttend5] = newGuest5;
-}
-dinnerGuests5.push("Leonardo da Vinci", "Jane Austen", "Martin Luther King Jr.");
-console.log("Invitation Messages for the First Set of Guests:");
-for (var _i = 0, dinnerGuests5_1 = dinnerGuests5; _i < dinnerGuests5_1.length; _i++) {
-    var guest = dinnerGuests5_1[_i];
-    console.log("Dear ".concat(guest, ",\nYou are cordially invited to join me for dinner. It would be an honor to have you as my guest.\nSincerely, [Abid Malik]"));
-}
-console.log("Unfortunately, ".concat(unableToAttend5, " can't make it to the dinner.\n"));
-console.log("Invitation Messages for the Second Set of Guests:");
-for (var _a = 0, dinnerGuests5_2 = dinnerGuests5; _a < dinnerGuests5_2.length; _a++) {
-    var guest = dinnerGuests5_2[_a];
-    console.log("Dear ".concat(guest, ",\nYou are still cordially invited to join me for dinner. It would be an honor to have you as my guest.\nSincerely, [Abid Malik]"));
-}
-console.log("Good news! We've found a bigger dinner table to accommodate more guests.");
+var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+};
+var placesToVisit = [
+    "Abid",
+    "Ali",
+    "Asad",
+    "Ahmad",
+    "Umar"
+];
+console.log("Original Order:");
+console.log(placesToVisit);
+console.log("\nAlphabetical Order:");
+console.log(__spreadArray([], placesToVisit, true).sort());
+console.log("\nOriginal Order (still):");
+console.log(placesToVisit);
+console.log("\nReverse Alphabetical Order:");
+console.log(__spreadArray([], placesToVisit, true).sort().reverse());
+console.log("\nOriginal Order (still):");
+console.log(placesToVisit);
+placesToVisit.reverse();
+console.log("\nReversed Order:");
+console.log(placesToVisit);
+placesToVisit.reverse();
+console.log("\nOriginal Order (again):");
+console.log(placesToVisit);
+placesToVisit.sort();
+console.log("\nSorted Alphabetical Order:");
+console.log(placesToVisit);
+placesToVisit.sort(function (a, b) { return b.localeCompare(a); });
+console.log("\nSorted Reverse Alphabetical Order:");
+console.log(placesToVisit);
